@@ -2,7 +2,7 @@ FROM ubuntu
 MAINTAINER nao20010128nao
 
 ADD server.groovy /root
-EXPOSE 80
+EXPOSE 8080
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 CMD ["/root/.sdkman/candidates/groovy/current/bin/groovy","/root/server.groovy"]
 
